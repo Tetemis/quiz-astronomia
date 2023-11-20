@@ -1,5 +1,5 @@
 body {
-  background-color: #0c1448;
+  background: #2b2b2b;
   color: #fff;
   font-family: 'Arial', sans-serif;
   display: flex;
@@ -10,11 +10,24 @@ body {
 }
 
 .app {
-  background-color: #1f1f1f;
+  background: linear-gradient(to right, #242424, #121212);
   padding: 20px;
   border-radius: 10px;
   width: 400px;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .question-section {
@@ -23,12 +36,19 @@ body {
   align-items: center;
 }
 
+.space-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ffd700; /* Amarelo ouro */
+}
+
 h2 {
   color: #ffd700; /* Amarelo ouro */
 }
 
 p {
   margin-bottom: 20px;
+  color: #ccc;
 }
 
 .answer-options {
@@ -37,17 +57,18 @@ p {
 }
 
 button {
-  background-color: #4682b4; /* Azul aço */
+  background: linear-gradient(to right, #4682b4, #356792);
   color: #fff;
   padding: 10px;
   margin: 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #4169e1; /* Azul real */
+  background: linear-gradient(to right, #4169e1, #345b9d);
 }
 
 .score-section {
@@ -59,11 +80,9 @@ button:hover {
 }
 
 .score-section button {
-  background-color: #4caf50; /* Verde */
+  background: linear-gradient(to right, #4caf50, #3b8e40);
 }
 
-.space-icon {
-  font-size: 3em;
-  margin-bottom: 10px;
-  color: #ffd700; /* Amarelo ouro */
+body {
+  font-family: 'Orbitron', sans-serif;
 }
