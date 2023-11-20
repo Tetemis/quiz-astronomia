@@ -1,38 +1,69 @@
-.App {
+body {
+  background-color: #0c1448;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  color: #ffd700; /* Amarelo ouro */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin-bottom: 20px;
+}
+
+.answer-options {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #4682b4; /* Azul aço */
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4169e1; /* Azul real */
+}
+
+.score-section {
+  text-align: center;
+}
+
+.score-section h2 {
+  color: #ffd700; /* Amarelo ouro */
+}
+
+.score-section button {
+  background-color: #4caf50; /* Verde */
+}
+
+.space-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ffd700; /* Amarelo ouro */
 }
